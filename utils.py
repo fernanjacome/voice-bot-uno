@@ -47,7 +47,7 @@ def extract_feature(file_name, mfcc, chroma, mel):
 
 def load_data(test_size=0.2):
     X, y = [], []
-    for file in glob.glob("data/Actor_*/*.wav"):
+    for file in glob.glob("data1/Actor_*/*.wav"):
         basename = os.path.basename(file)
         emotion = emotions[basename.split("-")[2]]
         if emotion not in AVAILABLE_EMOTIONS:
